@@ -17,12 +17,12 @@ class SanPham extends Seeder
         $arr=[];
         foreach ($data as $obj) {
           array_push($arr, array(
-            'name' => $obj->name,
-            'price' => $obj->price,
+            'ten' => $obj->name,
+            'gia' => $obj->price,
            
-            'image' => $obj->src,
-            'desctiption' => $obj->desctiption,
-            'category_id' => $obj->category_id
+            'hinhanh' => $obj->src,
+            'mota' => $obj->desctiption,
+            'idtl' => $obj->category_id
           ));
           DB::table("SanPham")->insert($arr);
         }

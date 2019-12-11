@@ -15,13 +15,13 @@ class CreateSanpham extends Migration
     {
         Schema::create('sanpham', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->double('price');
+            $table->string('ten');
+            $table->double('gia');
           
-            $table->longText('image');
-           $table->longText('desctiption');
-           $table->bigInteger('category_id')->unsigned();
-            $table->foreign('category_id')->references('id')->on('category');
+            $table->longText('hinhanh');
+           $table->longText('mota');
+           $table->bigInteger('idtl')->unsigned();
+            $table->foreign('idtl')->references('id')->on('theloai');
             $table->timestamps();
         
 

@@ -11,11 +11,11 @@ class TheLoai extends Seeder
      */
     public function run()
     {
-        DB::table('category')->insert(
-           [ ['category_name' => 'trẻ em' ] ,
+        DB::table('theloai')->insert(
+           [ ['ten' => 'trẻ em' ] ,
             
-                ['category_name' => 'nữ' ] , 
-                ['category_name' => 'nam' ] , 
+                ['ten' => 'nữ' ] , 
+                ['ten' => 'nam' ] , 
            ]
         );
     }

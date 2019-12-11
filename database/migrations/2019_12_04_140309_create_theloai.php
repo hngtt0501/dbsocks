@@ -13,9 +13,9 @@ class CreateTheloai extends Migration
      */
     public function up()
     {
-        Schema::create('category', function (Blueprint $table) {
+        Schema::create('theloai', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('category_name');
+            $table->string('ten');
     
             $table->timestamps();
         });
